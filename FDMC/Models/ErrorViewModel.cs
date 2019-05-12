@@ -1,6 +1,6 @@
 using System;
 
-namespace FDMC.Web.ViewModels
+namespace FDMC.Models
 {
     public class ErrorViewModel
     {

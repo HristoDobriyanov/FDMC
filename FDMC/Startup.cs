@@ -38,17 +38,7 @@ namespace FDMC
             services.AddDbContext<FdmcDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddDefaultIdentity<IdentityUser>(identityOptions =>
-                    {
-                        identityOptions.Password.RequireDigit = false;
-                        identityOptions.Password.RequireLowercase = true;
-                        identityOptions.Password.RequireUppercase = false;
-                        identityOptions.Password.RequireNonAlphanumeric = false;
-                        identityOptions.Password.RequiredUniqueChars = 0;
-                        identityOptions.Password.RequiredLength = 3;
-                        
-                    })
+            services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<FdmcDbContext>();
 

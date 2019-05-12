@@ -3,23 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using FDMC.Data;
 using Microsoft.AspNetCore.Mvc;
 using FDMC.Models;
-using FDMC.Web.ViewModels;
 
 namespace FDMC.Controllers
 {
     public class HomeController : Controller
     {
-        private FdmcDbContext dbContext;
-
-        public HomeController(FdmcDbContext dbContext)
-        {
-            this.dbContext = dbContext;
-        }
-
-
         public IActionResult Index()
         {
             return View();
