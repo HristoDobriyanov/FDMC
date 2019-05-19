@@ -1,0 +1,12 @@
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\bin\Debug\netcoreapp2.2\FDMC.Models.deps.json
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\bin\Debug\netcoreapp2.2\FDMC.Models.dll
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\bin\Debug\netcoreapp2.2\FDMC.Models.pdb
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.csprojAssemblyReference.cache
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.csproj.CoreCompileInputs.cache
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.AssemblyInfoInputs.cache
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.AssemblyInfo.cs
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.csproj.CopyComplete
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.dll
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Models\obj\Debug\netcoreapp2.2\FDMC.Models.pdb
