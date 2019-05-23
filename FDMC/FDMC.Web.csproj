@@ -18,9 +18,4 @@
     <ProjectReference Include="..\FDMC.Data\FDMC.Data.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Areas\Identity\Views\" />
-  </ItemGroup>
-
 </Project>

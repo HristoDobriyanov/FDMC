@@ -11,8 +11,12 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FDMC.Data;
+using FDMC.Models;
+using FDMC.Web.Areas.Identity.Pages.Account;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace FDMC
 {
@@ -39,7 +43,7 @@ namespace FDMC
             services.AddDbContext<FdmcDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(IdentityOptions =>
+            services.AddIdentity<FdmcUser, IdentityRole>(IdentityOptions =>
                     {
                         IdentityOptions.Password.RequireDigit = false;
                         IdentityOptions.Password.RequireLowercase = true;
@@ -50,7 +54,12 @@ namespace FDMC
 
                     })
                 .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<FdmcDbContext>();
+                .AddEntityFrameworkStores<FdmcDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.AddScoped<UserManager<FdmcUser>>();
+            services.AddScoped<UserStore<FdmcUser>>();
+            services.AddScoped<Logger<RegisterModel>>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

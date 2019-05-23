@@ -15,6 +15,7 @@ namespace FDMC.Data
         public FdmcDbContext(DbContextOptions<FdmcDbContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
     }
 }
