@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FDMC.App.Models.BindingModels;
+using FDMC.App.Models.ViewModels;
 using FDMC.Data;
+using FDMC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FDMC.App.Controllers
@@ -25,8 +28,17 @@ namespace FDMC.App.Controllers
             {
                 return NotFound();
             }
+            var catModel = new CatDetailsViewModel()
+            {
+                Age = cat.Age,
+                Breed = cat.Breed,
+                ImageUrl = cat.ImageUrl,
+                Name = cat.Name
+            };
 
-            return View(model: cat);
+            
+
+            return View(model: catModel);
         }
 
         [HttpGet]
@@ -35,11 +47,24 @@ namespace FDMC.App.Controllers
             return this.View();
         }
 
-        [HttpPut]
-        public IActionResult Add(object model)
+        [HttpPost]
+        public IActionResult Add(CatCreatingBindingModel model)
         {
-            var cat = model;
-            return this.View();
+            var cat = new Cat()
+            {
+                Age = model.Age,
+                Breed = model.Breed,
+                ImageUrl = model.ImageUrl,
+                Name = model.Name
+            };
+            this.Context.Cats.Add(cat);
+            this.Context.SaveChanges();
+
+            //return RedirectToRoute(
+            //    "default",
+            //    new { controller = "Cats", Action = "Details", Id = model.Id });
+
+            return RedirectToAction("Details", new {id=cat.Id});
         }
     }
 }

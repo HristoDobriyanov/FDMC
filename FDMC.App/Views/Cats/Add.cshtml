@@ -1,25 +1,28 @@
-﻿@model FDMC.Models.Cat
+﻿@model FDMC.App.Models.BindingModels.CatCreatingBindingModel
 @{
     ViewData["Title"] = "Add";
 }
 
 <h1>Add Cat</h1>
 
-<form>
-    <div>
-        <input type="text" name="Name" value="" />
-    </div>
-    <div>
-        <input type="text" name="Age" value="" />
-    </div>
-    <div>
+<form action="/Cats/Add" method="post">
+    <p>
+        <label asp-for="Name" style=""></label>
+        <input type="text" name="Name" value=""/>
+    </p>
+    <p>
+        <label asp-for="Age"></label>
+        <input type="text" name="Age" value=""/>
+    </p>
+    <p>
+        <label asp-for="Breed"></label>
         <input type="text" name="Breed" value="" />
-    </div>
-    <div>
-        <input type="text" name="ImageUrl" value="" />  
-    </div>
-    
-    
-
-
+    </p>
+    <p>
+        <label asp-for="ImageUrl">Image URL</label>
+        <input type="text" name="ImageUrl" value="" />
+    </p>
+    <p>
+        <input type="submit" value="Add cat"/>
+    </p>
 </form>

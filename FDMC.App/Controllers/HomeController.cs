@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using FDMC.App.Models;
+using FDMC.App.Models.ViewModels;
 using FDMC.Data;
 
 namespace FDMC.App.Controllers
@@ -18,7 +19,13 @@ namespace FDMC.App.Controllers
 
         public IActionResult Index()
         {
-            var cats = this.Context.Cats.ToArray();
+            var cats = this.Context.Cats
+                .Select(cat => new CatConciseViewModel()
+                {
+                    Id = cat.Id,
+                    Name = cat.Name
+                })
+                .ToArray();
 
             return View(cats);
         }
