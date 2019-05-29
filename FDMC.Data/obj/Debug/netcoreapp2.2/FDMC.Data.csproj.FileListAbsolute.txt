@@ -4,15 +4,11 @@ C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.c
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.csproj.CoreCompileInputs.cache
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.AssemblyInfoInputs.cache
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.AssemblyInfo.cs
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.csproj.CopyComplete
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\FDMC.Data.runtimeconfig.json
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\FDMC.Data.runtimeconfig.dev.json
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\FDMC.Data.pdb
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.xml
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.dll
-C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.pdb
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\FDMC.Models.dll
 C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\bin\Debug\netcoreapp2.2\FDMC.Models.pdb
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.dll
+C:\Users\HRI\Documents\GitHub\FDMC\FDMC.Data\obj\Debug\netcoreapp2.2\FDMC.Data.pdb
