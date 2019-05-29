@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using FDMC.App.Models;
 using FDMC.Data;
@@ -17,7 +18,9 @@ namespace FDMC.App.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var cats = this.Context.Cats.ToArray();
+
+            return View(cats);
         }
         
 
