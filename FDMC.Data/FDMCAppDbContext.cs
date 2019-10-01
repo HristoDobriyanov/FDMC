@@ -12,7 +12,7 @@ namespace FDMC.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=DESKTOP-R4OGD90\SQLEXPRESS;
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-5QA87SM\SQLEXPRESS;
                                                             Database=FDMC;
                                                             Integrated Security=True");
 
